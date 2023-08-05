@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./assets/css/hero.css">
     <link rel="stylesheet" href="./assets/css/linea-productos.css">
     <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
 </head>
 <body>
     <header class="contenedor header">
@@ -210,7 +212,7 @@
         </section>
     </main>
     <footer>
-        <div class="contenedor">
+        <div class="footer contenedor">
             <div class="logo">
                 <img src="./assets/img/Logo.png" alt="Logo AluraGeek">
             </div>
@@ -222,14 +224,22 @@
                 <a href="#">Quiero ser franquisiatario</a>
                 <a href="#">Anunciese con nosotros</a>
             </div>
-            <form class="contacto">
-                <fieldset>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="mensaje">Escribe tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    <button type="submit" class="boton">Enviar mensaje</button>
+            <form class="contacto formulario">
+                <fieldset class="formulario__campos">
+                    <legend class="formulario__header">Hable con nosotros</legend>
+                    <div class="formulario__campo">
+                        <label for="input__nombre" class="formulario__label inicial" id="label__nombre">Nombre</label>
+                        <input type="text" class="formulario__input" name="input__nombre" id="input__nombre">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="input__mensaje" class="formulario__label inicial" id="label__mensaje">Escribe tu mensaje</label>
+                        <textarea class="formulario__input formulario__input--text" name="input__mensaje" id="input__mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    
                 </fieldset>
+                <div class="formulario__submit">
+                    <button type="submit" class="boton">Enviar mensaje</button>
+                </div>
             </form>
         </div>
         <div class="foot">
@@ -237,5 +247,7 @@
             <p>2023</p>
         </div>
     </footer>
+
+    <script src="./assets/js/form-animacion.js"></script>
 </body>
 </html>
