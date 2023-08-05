@@ -44,7 +44,24 @@
         grid-template-columns: repeat(4, 1fr);
     }
     
-.producto .skill img {
-    width: 16.8rem;
+    .producto .skill img {
+        width: 16.8rem;
+    }
 }
+
+@media screen and (min-width: 1440px) {
+    .productos {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .producto .skill img {
+        width: 16.8rem;
+    }
+    .productos .producto:nth-child(-n+6) {
+        display: block;
+        justify-self: center;
+    }
+    .productos .producto:not(:nth-child(-n+6)) {
+        display: none;
+    }
 }
