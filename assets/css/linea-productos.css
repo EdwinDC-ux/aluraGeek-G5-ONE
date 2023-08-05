@@ -21,3 +21,9 @@
     top: 0.25rem;
     left: 0.1rem;
 }
+
+@media screen and (min-width: 768px) {
+    .linea-productos {
+        padding: 3.2rem;
+    }
+}
