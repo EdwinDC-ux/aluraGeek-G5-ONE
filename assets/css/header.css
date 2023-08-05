@@ -20,7 +20,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
     .header {
-        padding: 3.2rem;
+        padding: 1.6rem 3.2rem;
     }
     .barra-principal {
         display: flex;
@@ -56,5 +56,11 @@ h1 {
     }
     .search-icon {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 1.6rem 6.4rem;
     }
 }
