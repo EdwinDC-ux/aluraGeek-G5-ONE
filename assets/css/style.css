@@ -28,9 +28,6 @@ body {
     width: 100%;
     max-width: 1200px;
 }
-.hide {
-    display: none;
-}
 a {
     text-decoration: none;
 }
