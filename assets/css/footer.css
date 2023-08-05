@@ -29,3 +29,20 @@
 .foot > p {
     display: block;
 }
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 3.2rem;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .promocion {
+        width: 40%;
+    }
+    .enlaces-importantes a {
+        text-align: start;
+    }
+    .contacto {
+        width: 60%;
+    }
+}
