@@ -1,0 +1,19 @@
+h1 {
+    display: none;
+}
+.header {
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    display: none;
+}
+.search-icon {
+    display: flex;
+    align-items: center;
+}
