@@ -2,7 +2,7 @@ h1 {
     display: none;
 }
 .header {
-    padding: 16px;
+    padding: 1.6rem;
     justify-content: space-between;
     align-items: center;
 }
