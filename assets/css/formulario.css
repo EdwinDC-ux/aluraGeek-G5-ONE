@@ -1,0 +1,84 @@
+.inicial {
+    top: 0.6rem;
+    left: 0.35rem;
+    font-size: 1.6rem;
+}
+.in {
+    top: -0.4rem;
+    left: 0.35rem;
+    font-size: 1.2rem;
+    animation-name: text_in;
+    animation-duration: 0.2s;
+}
+.out {
+    top: 0.6rem;
+    left: 0.35rem;
+    font-size: 1.6rem;
+    animation-name: text_out;
+    animation-duration: 0.2s;
+}
+.formulario {
+    margin-bottom: 2rem;
+}
+.formulario > :not(:last-child) {
+    margin-bottom: 2rem;
+}
+.formulario__campos > :not(:last-child) {
+    margin-bottom: 2rem;
+}
+.formulario__campo {
+    position: relative;
+}
+.formulario__label {
+    color: var(--gray);
+    background-color: transparent;
+    position: absolute;
+    padding: 0 0.5rem;
+    cursor: text;
+}
+.formulario__campo:focus-within .formulario__label {
+    cursor: pointer;
+    color: var(--blue);
+}
+.formulario__input {
+    border: none;
+    border-bottom: 2px solid var(--gray3);
+    color: var(--black);
+    width: 100%;
+    padding: 1.5rem 0.8rem 0.7rem 0.8rem;
+}
+.formulario__input:focus-visible {
+    outline: none;
+    border-color: var(--blue);
+    caret-color: var(--blue);
+}
+.formulario__input--text {
+    height: 8rem;
+    overflow: hidden;
+}
+
+@keyframes text_in {
+    from {
+        top: 0.6rem;
+        left: 0.35rem;
+        font-size: 1.6rem;
+    }
+    to {
+        top: -0.4rem;
+        left: 0.35rem;
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes text_out {
+    from {
+        top: -0.4rem;
+        left: 0.35rem;
+        font-size: 1.2rem;
+    }
+    to {
+        top: 0.6rem;
+        left: 0.35rem;
+        font-size: 1.6rem;
+    }
+}
