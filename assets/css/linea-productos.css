@@ -24,6 +24,12 @@
 
 @media screen and (min-width: 768px) {
     .linea-productos {
-        padding: 3.2rem;
+        padding: 1.6rem 3.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .linea-productos {
+        padding: 1.6rem 9.6rem;
     }
 }
