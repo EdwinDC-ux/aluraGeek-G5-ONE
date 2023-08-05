@@ -1,0 +1,40 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+}
+.productos .producto:nth-child(-n+4) {
+    display: block;
+    justify-self: center;
+}
+.productos .producto:not(:nth-child(-n+4)) {
+    display: none;
+}
+.producto .detalles{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.producto .detalles :nth-child(n) {
+    text-align: start;
+    padding: 0.2em;
+}
+.detalles h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.precio {
+    font-size: 16px;
+    font-weight: 700;
+}
+.precio::before {
+    content: "$  ";
+}
+.precio::after {
+    content: "  MXN";
+}
+.detalles a {
+    color: var(--blue);
+    font-weight: 500;
+}
