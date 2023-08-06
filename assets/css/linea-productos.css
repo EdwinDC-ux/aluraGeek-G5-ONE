@@ -1,0 +1,35 @@
+.linea-productos {
+    padding: 1.6rem;
+    flex-direction: column;
+}
+.linea-productos__encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.linea-productos__encabezado a {
+    color: var(--blue);
+    font-weight: 500;
+}
+.linea-productos__encabezado a:after {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--blue);
+    content: url(../img/arrow.svg);
+    position: relative;
+    top: 0.25rem;
+    left: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .linea-productos {
+        padding: 1.6rem 3.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .linea-productos {
+        padding: 1.6rem 9.6rem;
+    }
+}
