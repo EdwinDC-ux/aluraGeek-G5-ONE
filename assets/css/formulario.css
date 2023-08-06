@@ -23,6 +23,9 @@
 .formulario > :not(:last-child) {
     margin-bottom: 2rem;
 }
+.formulario__header {
+    color: var(--black);
+}
 .formulario__campos > :not(:last-child) {
     margin-bottom: 2rem;
 }
@@ -30,7 +33,7 @@
     position: relative;
 }
 .formulario__label {
-    color: var(--gray);
+    color: var(--formulary-label-text);
     background-color: transparent;
     position: absolute;
     padding: 0 0.5rem;
@@ -42,7 +45,7 @@
 }
 .formulario__input {
     border: none;
-    border-bottom: 2px solid var(--gray3);
+    border-bottom: 2px solid var(--transparent-blue);
     color: var(--black);
     width: 100%;
     padding: 1.5rem 0.8rem 0.7rem 0.8rem;
