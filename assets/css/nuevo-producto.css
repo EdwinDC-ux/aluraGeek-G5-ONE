@@ -1,0 +1,17 @@
+.main {
+    background-color: var(--transparent-black);
+    padding: 9.6rem 0;
+    justify-content: center;
+}
+.nuevo-producto {
+    width: 90%;
+}
+.nuevo-producto__submit {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuevo-producto {
+        width: 40%;
+    }
+}
