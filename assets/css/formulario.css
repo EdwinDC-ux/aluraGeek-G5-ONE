@@ -23,6 +23,9 @@
 .formulario > :not(:last-child) {
     margin-bottom: 2rem;
 }
+.formulario__header {
+    color: var(--black);
+}
 .formulario__campos > :not(:last-child) {
     margin-bottom: 2rem;
 }
