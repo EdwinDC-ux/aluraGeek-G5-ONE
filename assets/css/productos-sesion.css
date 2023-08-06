@@ -1,0 +1,81 @@
+.sesion-productos {
+    padding: 1.6rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sesion-productos__encabezado {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sesion-productos__encabezado a{
+    width: fit-content;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    row-gap: 4rem;
+    
+}
+.producto > .skill{
+    position: relative;
+}
+.producto > .skill::before {
+    content: url('../img/trash.svg');
+    position: absolute;
+    top: 0.2rem;
+    left: 0.6rem;
+    cursor: pointer;
+}
+.producto > .skill::after {
+    content: url('../img/edit.svg');
+    position: absolute;
+    top: 0.2rem;
+    left: 15rem;
+    cursor: pointer;
+}
+.producto .detalles{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.producto .detalles :nth-child(n) {
+    text-align: start;
+    padding: 0.2em;
+}
+.detalles h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.precio {
+    font-size: 16px;
+    font-weight: 700;
+}
+.precio::before {
+    content: "$  ";
+}
+.precio::after {
+    content: "  MXN";
+}
+.detalles a {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .sesion-productos__encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
