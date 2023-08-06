@@ -9,6 +9,8 @@ h1 {
 .logo {
     display: flex;
     align-items: center;
+    width: 14rem;
+
 }
 .search-bar {
     display: none;
@@ -21,6 +23,9 @@ h1 {
 @media screen and (min-width: 768px) {
     .header {
         padding: 1.6rem 3.2rem;
+    }
+    .logo {
+        width: 17.6rem;
     }
     .barra-principal {
         display: flex;
