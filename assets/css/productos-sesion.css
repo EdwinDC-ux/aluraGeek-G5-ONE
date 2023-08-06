@@ -32,7 +32,7 @@
     content: url('../img/edit.svg');
     position: absolute;
     top: 0.2rem;
-    left: 15rem;
+    right: 0.6rem;
     cursor: pointer;
 }
 .producto .detalles{
