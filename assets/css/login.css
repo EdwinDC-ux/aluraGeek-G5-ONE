@@ -8,3 +8,12 @@
         width: 40%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .login {
+        width: 30%;
+    }
+    .login__submit {
+        width: 100%;
+    }
+}
